@@ -16,7 +16,7 @@ export class Vehiculo {
     }
 
     mostrarDatos() {
-        let datosTexto = `
+        const mensaje = `
             <h1>Datos del Vehículo</h1>
             <p>Marca: ${this.#marca}</p>
             <p>Modelo: ${this.#modelo}</p>
@@ -24,7 +24,7 @@ export class Vehiculo {
             <p>Año de fabricación: ${this.#anioFabricacion}</p>
         `;
 
-        mostrarResultados(datosTexto);
+        mostrarResultados(mensaje);
     }
 
     acelerar(velocidad) {
