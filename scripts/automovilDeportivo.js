@@ -17,7 +17,7 @@ export class automovilDeportivo extends Vehiculo {
     }
 
     activarMotorDeportivo() {
-        const mensaje = "El modo deportivo ha sido activado.";
+        const mensaje = "<p>El modo deportivo ha sido activado.</p>";
         mostrarResultados(mensaje);
     }
 

@@ -17,30 +17,31 @@ export class Vehiculo {
 
     mostrarDatos() {
         const mensaje = `
-            <h1>Datos del Vehículo</h1>
+            <h2>Datos del Vehículo</h2>
             <p>Marca: ${this.#marca}</p>
             <p>Modelo: ${this.#modelo}</p>
             <p>Color: ${this.#color}</p>
             <p>Año de fabricación: ${this.#anioFabricacion}</p>
+            <br />
         `;
 
         mostrarResultados(mensaje);
     }
 
     acelerar(velocidad) {
-        const mensaje = `El vehículo ha acelerado hasta ${velocidad}km/h`;
+        const mensaje = `<p>El vehículo ha acelerado hasta ${velocidad}km/h</p>`;
 
         mostrarResultados(mensaje);
     }
 
     arrancar() {
-        const mensaje = "El vehículo ha arrancado.";
+        const mensaje = "<p>El vehículo ha arrancado.</p>";
 
         mostrarResultados(mensaje);
     }
 
     frenar() {
-        const mensaje = "El vehículo ha frenado.";
+        const mensaje = "<p>El vehículo ha frenado.</p>";
 
         mostrarResultados(mensaje);
     }
@@ -65,7 +66,7 @@ export class Vehiculo {
         return this.#cilindrada;
     }
 
-    setMarca(marca) {
+    setarca(marca) {
         this.#marca = marca;
     }
 
