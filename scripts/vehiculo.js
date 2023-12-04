@@ -1,3 +1,5 @@
+import { mostrarResultados } from "./main.js";
+
 export class Vehiculo {
     #marca;
     #modelo;
@@ -22,19 +24,25 @@ export class Vehiculo {
             <p>Año de fabricación: ${this.#anioFabricacion}</p>
         `;
 
-        return datosTexto;
+        mostrarResultados(datosTexto);
     }
 
     acelerar(velocidad) {
-        return `El vehículo ha acelerado hasta ${velocidad}km/h`;
+        const mensaje = `El vehículo ha acelerado hasta ${velocidad}km/h`;
+
+        mostrarResultados(mensaje);
     }
 
     arrancar() {
-        return "El vehículo ha arrancado.";
+        const mensaje = "El vehículo ha arrancado.";
+
+        mostrarResultados(mensaje);
     }
 
     frenar() {
-        return "El vehículo ha frenado.";
+        const mensaje = "El vehículo ha frenado.";
+
+        mostrarResultados(mensaje);
     }
 
     getMarca() {
@@ -75,9 +83,5 @@ export class Vehiculo {
 
     setCilindrada(cilindrada) {
         this.#cilindrada = cilindrada;
-    }
-
-    mostrarResultado(){
-        
     }
 }

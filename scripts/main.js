@@ -3,11 +3,15 @@
  * Repositorio Github:
  */
 
-import { Vehiculo } from "./vehiculo";
-import { automovilDeportivo } from "./automovilDeportivo";
+import { Vehiculo } from "./vehiculo.js";
+import { automovilDeportivo } from "./automovilDeportivo.js";
 
 const resultadoContainer = document.createElement("div");
 
-function mostrarResultados(mensaje) {
-    resultadoContainer.appendChild(<p>mensaje</p>);
+export function mostrarResultados(mensaje) {
+    resultadoContainer.innerHTML += `<p>${mensaje}</p>`;
+    document.body.appendChild(resultadoContainer);
 }
+
+const vehiculo1 = new Vehiculo("BMW", "CLK", "rojo", 1992, "2400");
+vehiculo1.mostrarDatos();

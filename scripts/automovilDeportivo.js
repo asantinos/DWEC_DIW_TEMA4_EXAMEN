@@ -1,4 +1,4 @@
-import { Vehiculo } from "./vehiculo";
+import { Vehiculo } from "./vehiculo.js";
 
 export class automovilDeportivo extends Vehiculo {
     #potenciaMotor;
