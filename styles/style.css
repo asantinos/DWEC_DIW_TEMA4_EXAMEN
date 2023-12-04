@@ -1,0 +1,20 @@
+@font-face {
+    font-family: NovaSquare;
+    src: url(../assets/fonts/NovaSquare-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../assets/imgs/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: NovaSquare;
+}
