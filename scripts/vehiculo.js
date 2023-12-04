@@ -29,19 +29,19 @@ export class Vehiculo {
     }
 
     acelerar(velocidad) {
-        const mensaje = `<p>El vehículo ha acelerado hasta ${velocidad}km/h</p>`;
+        const mensaje = `<p>El ${this.marca} ${this.modelo} ha acelerado hasta ${velocidad}km/h</p>`;
 
         mostrarResultados(mensaje);
     }
 
     arrancar() {
-        const mensaje = "<p>El vehículo ha arrancado.</p>";
+        const mensaje = `<p>El ${this.marca} ${this.modelo} ha arrancado.</p>`;
 
         mostrarResultados(mensaje);
     }
 
     frenar() {
-        const mensaje = "<p>El vehículo ha frenado.</p>";
+        const mensaje = `<p>El ${this.marca} ${this.modelo} ha frenado.</p>`;
 
         mostrarResultados(mensaje);
     }
