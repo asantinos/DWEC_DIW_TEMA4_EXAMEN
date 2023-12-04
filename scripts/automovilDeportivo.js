@@ -21,11 +21,11 @@ export class automovilDeportivo extends Vehiculo {
         mostrarResultados(mensaje);
     }
 
-    getPotenciaMotor() {
+    get potenciaMotor() {
         return this.#potenciaMotor;
     }
 
-    setPotenciaMotor(potenciaMotor) {
+    set potenciaMotor(potenciaMotor) {
         this.#potenciaMotor = potenciaMotor;
     }
 }

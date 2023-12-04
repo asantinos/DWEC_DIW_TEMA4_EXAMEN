@@ -46,43 +46,43 @@ export class Vehiculo {
         mostrarResultados(mensaje);
     }
 
-    getMarca() {
+    get marca() {
         return this.#marca;
     }
 
-    getModelo() {
+    get modelo() {
         return this.#modelo;
     }
 
-    getColor() {
+    get color() {
         return this.#color;
     }
 
-    getAnioFrabricacion() {
+    get anioFrabricacion() {
         return this.#anioFabricacion;
     }
 
-    getCilindrada() {
+    get cilindrada() {
         return this.#cilindrada;
     }
 
-    setarca(marca) {
+    set marca(marca) {
         this.#marca = marca;
     }
 
-    setModelo(modelo) {
+    set modelo(modelo) {
         this.#modelo = modelo;
     }
 
-    setColor(color) {
+    set color(color) {
         this.#color = color;
     }
 
-    setAnioFrabricacion(anioFabricacion) {
+    set anioFrabricacion(anioFabricacion) {
         this.#anioFabricacion = anioFabricacion;
     }
 
-    setCilindrada(cilindrada) {
+    set cilindrada(cilindrada) {
         this.#cilindrada = cilindrada;
     }
 }

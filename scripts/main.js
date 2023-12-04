@@ -15,6 +15,7 @@ export function mostrarResultados(mensaje) {
     resultadoContainer.innerHTML += `${mensaje}`;
 }
 
+// VEHICULOS
 mostrarResultados("<br /> --- VEHÍCULOS ---");
 const vehiculo1 = new Vehiculo("BMW", "CLK", "rojo", 1992, "2400");
 vehiculo1.mostrarDatos();
@@ -32,9 +33,9 @@ const vehiculoObject = {
 
 localStorage.setItem("vehiculo", JSON.stringify(vehiculoObject));
 
-// const datosVehiculo = localStorage.getItem("vehiculo");
-// console.log(datosVehiculo);
+console.log(JSON.parse(localStorage.getItem("vehiculo")));
 
+// DEPORTIVOS
 mostrarResultados("<br /> --- DEPORTIVOS ---");
 const deportivo1 = new automovilDeportivo(
     "Ferrari",
@@ -60,11 +61,11 @@ const deportivoObject = {
 
 for (let key in deportivoObject) {
     if (deportivoObject.hasOwnProperty(key)) {
-        localStorage.setItem(key, deportivoObject(key));
+        localStorage.setItem(key, JSON.stringify(deportivoObject[key]));
     }
 }
 
 localStorage.removeItem(deportivoObject.cilindrada);
 localStorage.removeItem(deportivoObject.potenciaMotor);
 
-localStorage.clear();
+// localStorage.clear();
