@@ -1,3 +1,4 @@
+/* FUENTE LOCAL */
 @font-face {
     font-family: NovaSquare;
     src: url(../assets/fonts/NovaSquare-Regular.ttf);
@@ -11,6 +12,7 @@
 
 body {
     height: 100vh;
+    /* IMAGEN DE FONDO */
     background-image: url(../assets/imgs/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,8 +27,10 @@ body {
 
 .container {
     width: 500px;
+    /* DEGRADADO */
     background: linear-gradient(#fff, #7595e7);
     padding: 20px;
+    /* SOMBREADO */
     box-shadow: 0 0 10px #fff;
     text-align: center;
     border-radius: 20px;
@@ -55,6 +59,16 @@ h1 {
     margin-top: 50px;
 }
 
+/* PSEUDOSELECTOR */
+p:last-child {
+    background-color: red;
+    color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/* KEYFRAMES */
 @keyframes drive {
     0% {
         transform: translateX(-500%);
