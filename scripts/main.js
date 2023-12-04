@@ -7,6 +7,7 @@ import { Vehiculo } from "./vehiculo.js";
 import { automovilDeportivo } from "./automovilDeportivo.js";
 
 const resultadoContainer = document.createElement("div");
+resultadoContainer.className = "resultadoContainer";
 
 export function mostrarResultados(mensaje) {
     resultadoContainer.innerHTML += `<p>${mensaje}</p>`;
