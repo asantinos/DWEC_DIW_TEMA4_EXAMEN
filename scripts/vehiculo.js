@@ -58,7 +58,7 @@ export class Vehiculo {
         return this.#color;
     }
 
-    get anioFrabricacion() {
+    get anioFabricacion() {
         return this.#anioFabricacion;
     }
 
@@ -78,7 +78,7 @@ export class Vehiculo {
         this.#color = color;
     }
 
-    set anioFrabricacion(anioFabricacion) {
+    set anioFabricacion(anioFabricacion) {
         this.#anioFabricacion = anioFabricacion;
     }
 

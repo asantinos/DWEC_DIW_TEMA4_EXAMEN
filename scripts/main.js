@@ -11,7 +11,9 @@ const resultadoContainer = document.createElement("div");
 resultadoContainer.className = "resultadoContainer";
 container.appendChild(resultadoContainer);
 
+// Agregará los mensajes a resultadosContainer
 export function mostrarResultados(mensaje) {
+    // Dejamos solamente el mensaje sin etiquetas HTML, porque ya las tendrá cada mensaje en su función
     resultadoContainer.innerHTML += `${mensaje}`;
 }
 
@@ -23,6 +25,7 @@ vehiculo1.arrancar();
 vehiculo1.acelerar(140);
 vehiculo1.frenar();
 
+// Asignamos los valores del vehiculo1
 const vehiculoObject = {
     marca: vehiculo1.marca,
     modelo: vehiculo1.modelo,
@@ -50,6 +53,7 @@ deportivo1.arrancar();
 deportivo1.acelerar(140);
 deportivo1.frenar();
 
+// Asignamos los valores de deportivo1
 const deportivoObject = {
     marca: deportivo1.marca,
     modelo: deportivo1.modelo,
@@ -59,13 +63,17 @@ const deportivoObject = {
     potenciaMotor: deportivo1.potenciaMotor,
 };
 
+// Utilizamos un bucle for para iterar sobre cada propiedad del objeto
+// Así almacenamos cada propiedad en el localStorage individualmente
 for (let key in deportivoObject) {
     if (deportivoObject.hasOwnProperty(key)) {
         localStorage.setItem(key, JSON.stringify(deportivoObject[key]));
     }
 }
 
-localStorage.removeItem(deportivoObject.cilindrada);
-localStorage.removeItem(deportivoObject.potenciaMotor);
+// Eliminamos dos propiedades almacenadas en el localStorage de deportivoObject
+localStorage.removeItem("marca");
+localStorage.removeItem("cilindrada");
 
+// Eliminamos todos los datos del localStorage (comentado para poder ver los datos)
 // localStorage.clear();

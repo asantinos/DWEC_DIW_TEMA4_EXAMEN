@@ -1,6 +1,7 @@
 import { mostrarResultados } from "./main.js";
 import { Vehiculo } from "./vehiculo.js";
 
+// Herencia de la clase Vehiculo
 export class automovilDeportivo extends Vehiculo {
     #potenciaMotor;
 
@@ -12,6 +13,7 @@ export class automovilDeportivo extends Vehiculo {
         cilindrada,
         potenciaMotor
     ) {
+        // super para llamar a los atributos de la clase padre
         super(marca, modelo, color, anioFabricacion, cilindrada);
         this.#potenciaMotor = potenciaMotor;
     }
